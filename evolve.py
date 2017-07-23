@@ -62,8 +62,6 @@ for generation_number in range(0, number_of_generations):
         dest.write(dest_data)
         dest.close()
 
-    # tournament selection - each genome once with a random partner
-
     gen_path = os.path.join(folder_name, '*.py')
     command = '/usr/bin/python2 rpsrunner.py -m 1 \"{0}\"'.format(gen_path)
     print command
