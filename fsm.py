@@ -1,12 +1,43 @@
 
 # first state 3 bits
-# first ouptu 1 char
+# first ouput 1 char
 # *24
 # implied 3 bits state
 # implied 1 char input
 # 3 bits next state
 # 1 char output
 
+# 4 * 25 = 100
+
+# starting state XXX
+# first output   X
+# state in next out
+# 000   R  XXX  X
+# 000   P  XXX  X
+# 000   S  XXX  X
+# 001   R  XXX  X
+# 001   P  XXX  X
+# 001   S  XXX  X
+# 010   R  XXX  X
+# 010   P  XXX  X
+# 010   S  XXX  X
+# 011   R  XXX  X
+# 011   P  XXX  X
+# 011   S  XXX  X
+# 100   R  XXX  X
+# 100   P  XXX  X
+# 100   S  XXX  X
+# 101   R  XXX  X
+# 101   P  XXX  X
+# 101   S  XXX  X
+# 110   R  XXX  X
+# 110   P  XXX  X
+# 110   S  XXX  X
+# 111   R  XXX  X
+# 111   P  XXX  X
+# 111   S  XXX  X
+
+# example genome that just outputs the previous input
 #last_input = "000R000R000P000S000R000R000R000R000R000R000R000R000R000R000R000R000R000R000R000R000R000R000R000R000R"
 last_input = "xxxGENOMExxx"
 
@@ -50,10 +81,4 @@ if input == "":
     bot = fsm(last_input)
 
 output = bot.get_output(input)
-
-#DEBUG
-#b = fsm(last_input)
-#print(b.get_output("R"))
-#print(b.get_output("P"))
-#print(b.get_output("S"))
 
