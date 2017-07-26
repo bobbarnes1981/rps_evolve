@@ -102,7 +102,7 @@ for generation_number in range(0, number_of_generations):
     #for i in range(0, number_per_generation):
     #    print i, current_generation[i]['score']
 
-    number_to_breed = (number_per_generation * breed_percent) / 10
+    number_to_breed = (number_per_generation * breed_percent) / 1000
     print 'breed', number_to_breed
 
     # breed the top x percent randonly until we have enough new genomes
